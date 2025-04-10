@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Racer</title>
+    <link rel="stylesheet" href="/css/racer.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="side-background" id="left-background"></div>
+        <div class="side-background" id="right-background"></div>
+        <div id="road">
+            <div class="center-line"></div>
+        </div>
+        <div id="player"></div>
+        
+        <div id="score-container">Score: <span id="score">0</span></div>
+        <div id="level-container">Level: <span id="level">1</span></div>
+        
+        <div id="start-screen">
+            <h1 class="screen-title">Traffic Racer</h1>
+            <p>Dodge cars and survive as long as possible!</p>
+            <button id="start-button" class="button">Start Game</button>
+            <div id="controls">
+                Use arrow keys: ← → to move sideways<br>
+                ↑ to accelerate (move forward), ↓ to brake (move backward)
+            </div>
+        </div>
+        
+        <div id="game-over-screen">
+            <h1 class="screen-title">Game Over</h1>
+            <p>Your final score: <span id="final-score">0</span></p>
+            <p>Level reached: <span id="final-level">1</span></p>
+            <button id="restart-button" class="button">Play Again</button>
+        </div>
+        
+        <div id="level-complete-screen">
+            <h1 class="screen-title">Level Complete!</h1>
+            <p>Congratulations! You completed level <span id="completed-level">1</span></p>
+            <p>Score: <span id="level-score">0</span></p>
+            <button id="next-level-button" class="button">Next Level</button>
+        </div>
+        
+        <div id="credits">
+            developed by Anjana Heshan @ jise
+        </div>
+    </div>
+
+    <script src="/js/racer.js"> </script>
+</body>
+</html>
